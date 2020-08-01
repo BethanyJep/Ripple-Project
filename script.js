@@ -1,8 +1,28 @@
 const username = document.getElementsByName('username')
 const password = document.getElementsByName('password')
-const submit = document.getElementsById('submit')
+const submitB = document.getElementsById('submit')
 
-var usernames = (['Sandra', 'sandra101'], ['Susan', 'susan102'], ['Brian', 'brian103'], ['Brandon', 'brandon104'],
-    ['Rachael', 'rachael105'], ['George', 'george106'], ['Paul', 'paul107'], ['Patricia', 'patricia108'])
+var usernames = ('Sandra', 'Susan', 'Brian', 'Brandon', 'Rachael', 'George', 'Paul', 'Patricia')
 
-let username = () => alert("Hello!");
+var passwords = ('sandra101', 'susan102', 'brian103', 'brandon104', 'rachael105', 'george106', 'paul107', 'patricia108')
+
+    
+function userName() {
+    if (username = usernames)
+        alert("username not found")
+        else
+        alert("OK, you can register.")
+};
+function passWord() {
+    if (password = passwords)
+        alert("password not found")
+        else
+        alert("OK, you can register.")
+};
+function submission() {
+
+};
+
+username.onblur = userName()
+password.onclick = passWord()
+submitB.onsubmit = submission()
